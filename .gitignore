@@ -12,3 +12,4 @@ storage/
 .env.php
 .env
 .env.example
+/Tomas/project/nbproject/private/
