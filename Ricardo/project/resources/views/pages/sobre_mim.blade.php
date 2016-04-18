@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Ola Ricardo</div>
+                <div class="title">Sobre Mim</div>
             </div>
         </div>
     </body>
