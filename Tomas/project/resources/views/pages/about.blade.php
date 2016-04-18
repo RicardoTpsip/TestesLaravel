@@ -36,26 +36,8 @@
         </style>
     </head>
     <body>
-        <!-- Using blade engine for authenticate data -->
-        
-        @if(empty($people))
-            There are no people.
-        @else
-            Something else here.
-        @endif
-        
-        <!-- Another note -->
-        <!-- unless is = to if(!variable) -->
-        
-        @unless(empty($people))
-            There are some people.
-        @endunless
-        
-        <!-- Using blade engine for output data -->
-        @foreach($people as $person)
-        
-            <li>{{ $person }}</li>
-            
-        @endforeach
+        About page here.
     </body>
 </html>
+
+
