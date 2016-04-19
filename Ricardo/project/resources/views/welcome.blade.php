@@ -40,11 +40,11 @@
         <!-- Se o array tiver vazio apreseta a respectiva mensagem, com blade engine nao precisamod abrir
         a tag do php basta o @ -->
         
-        @if(empty($pessoas))
+        @unless(empty($pessoas))
         
-        Não ha pessoas
+        Afinal ha pessoas
         
-        @endif
+        @endunless
         
         @foreach($pessoas as $pessoa)
         

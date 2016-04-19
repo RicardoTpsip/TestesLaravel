@@ -17,17 +17,23 @@
 //resources/views e o nome do ficheiro com extensão .blade.php
 //podemos  retornar uma string que o blade converte em html
 //As routes têm sempre um retorno
-Route::get('/', function () {
+
+
+//transferi a função para PagesController.php
+/*Route::get('/', function () {
     
     //criação do array depois podemos retorna-lo de varias formas usei o compact para o efeito
     
-    $pessoas=['Ricardo', 'Manel', 'Tomas'];
+    $pessoas=['Ricardo', 'Tomas', 'Manuel'];
     
     return view('welcome', compact('pessoas'));
-});
+}); */
 
 
 //Route personalizada
 Route::get('sobre_mim', function(){
    return view('pages/sobre_mim');
 });
+
+//Rota para um controller
+Route::get('/', 'PagesController@home');
