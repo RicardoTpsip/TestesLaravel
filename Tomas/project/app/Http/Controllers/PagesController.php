@@ -20,7 +20,7 @@ class PagesController extends Controller
     
     //About Page
     public function about(){
-        return view('pages/about'); //resources/views/pages/about.blade.php
+        return view('about'); //resources/views/pages/about.blade.php
     }
     
 }
