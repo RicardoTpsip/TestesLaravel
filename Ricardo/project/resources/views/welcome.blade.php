@@ -36,10 +36,21 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Ola Ricardo</div>
-            </div>
-        </div>
+        
+        <!-- Se o array tiver vazio apreseta a respectiva mensagem, com blade engine nao precisamod abrir
+        a tag do php basta o @ -->
+        
+        @if(empty($pessoas))
+        
+        Não ha pessoas
+        
+        @endif
+        
+        @foreach($pessoas as $pessoa)
+        
+    <li>{{$pessoa}}></li>
+    
+    @endforeach
+        
     </body>
 </html>

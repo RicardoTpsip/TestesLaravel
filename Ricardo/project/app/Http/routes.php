@@ -18,7 +18,12 @@
 //podemos  retornar uma string que o blade converte em html
 //As routes têm sempre um retorno
 Route::get('/', function () {
-    return view('welcome');
+    
+    //criação do array depois podemos retorna-lo de varias formas usei o compact para o efeito
+    
+    $pessoas=['Ricardo', 'Manel', 'Tomas'];
+    
+    return view('welcome', compact('pessoas'));
 });
 
 
