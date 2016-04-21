@@ -13,4 +13,9 @@ class PagesController extends Controller
         return view('welcome', compact('pessoas'));
     }
     
+    public function about(){
+        
+        return view('pages/sobre_mim');
+    }
+    
 }

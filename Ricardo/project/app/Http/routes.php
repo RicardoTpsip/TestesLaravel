@@ -31,9 +31,10 @@
 
 
 //Route personalizada
-Route::get('sobre_mim', function(){
+/*Route::get('sobre_mim', function(){
    return view('pages/sobre_mim');
-});
+}); */
 
 //Rota para um controller
 Route::get('/', 'PagesController@home');
+Route::get('about', 'PagesController@about');
